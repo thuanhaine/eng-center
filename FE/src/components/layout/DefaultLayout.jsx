@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Footer, Home,Courses, User } from "../index";
+import { Footer, Home,Courses, User, Information } from "../index";
 import {
   DesktopOutlined,
   HomeFilled,
@@ -18,11 +18,13 @@ function getItem(label, key, icon, children) {
     label,
   };
 }
+
+// những items này sẽ được rander ra thành menu
 const items = [
   getItem("Trang Chủ", "/", <HomeFilled />),
   getItem("Khóa Học", "/courses", <DesktopOutlined />),
   getItem("Lớp Của Tôi", "/user", <TeamOutlined />),
-  getItem("Thông Tin", "/info", <InfoOutlined />),
+  getItem("Thông Tin", "/infromation", <InfoOutlined />),
 ];
 
 const DefaultLayout = ({ isUser }) => {
@@ -100,6 +102,7 @@ const DefaultLayout = ({ isUser }) => {
             <Route path="/" element={<Home />} />
             <Route path="/courses" element={<Courses />} />
             <Route path="/user" element={<User />} />
+            <Route path="/infromation" element={<Information />} />
           </Routes>
         </Content>
         <Footer

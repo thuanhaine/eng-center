@@ -32,8 +32,9 @@ useEffect(() => {
     fetch(`http://localhost:3002/api/get`)
       .then((res) => res.json())
       .then((res) => {
-        setListCourses(res);
-        console.log(listCourses.length)
+        const sortData = res.sort((a,b) => a.index - b.index)
+        setListCourses(sortData);
+        console.log(sortData)
       });
   }, []);
 
@@ -74,6 +75,8 @@ useEffect(() => {
                   Date start: {course.dateStart}
                 </p>
                 <p className="courses__list-item--student">Student: {course.studentNumber}</p>
+
+                  <button className="btn">Đăng ký</button>
               </li>
             );
           }

@@ -31,13 +31,36 @@
       box-shadow: 0 0 10px #ccc;
       border-radius: 8px;
       padding: 12px;
-    }
-    .courses__list-item:hover {
-      background-color: rgb(208, 228, 255);
+      height: 250px;
+        position: relative;
+
+        .btn{
+          position: absolute;
+          bottom: 12px;
+          right: 12px;
+          font-size: 16px;
+          padding: 6px 12px;
+          border-radius: 4px;
+          outline: none;
+          border: none;
+          background-color: rgb(108, 172, 255);
+          color: white;
+          font-weight: 600;
+
+        }
+        .btn:hover {
+          background-color: rgb(3, 100, 228);
+          opacity: .8;
       cursor: pointer;
-      border: 2px solid rgb(208, 228, 255);
-      box-shadow: 0 0 10px rgb(173, 207, 255);
+
+        }
     }
+    // .courses__list-item:hover {
+    //   background-color: rgb(208, 228, 255);
+    //   cursor: pointer;
+    //   border: 2px solid rgb(208, 228, 255);
+    //   box-shadow: 0 0 10px rgb(173, 207, 255);
+    // }
   }
   .courses__more {
     margin-top: 52px;

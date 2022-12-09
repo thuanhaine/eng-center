@@ -33,7 +33,8 @@ const handleInputCourses = (e) => {
      if(res.status === 200)
       {
       alert(res.message)
-      }
+    window.location.reload();
+  } 
       else {
         alert(res.message)
       }
