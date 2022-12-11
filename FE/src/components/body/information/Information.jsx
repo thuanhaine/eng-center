@@ -41,7 +41,7 @@ function Information() {
           <h1 className="infor__left-name">{user.name}</h1>
           <div className="info-box">
             <p className="text-title">Thông tin cá nhân</p>
-            <p className="text-text">Chức vụ: <strong>{user.role}</strong></p>
+            <p className="text-text">Vai trò: <strong>{user.role}</strong></p>
             <p className="text-text">Email: <strong>{user.email}</strong></p>
             <p className="text-text">Mật khẩu: <strong>********</strong></p>
             <p className="text-text">Ngày tạo: <strong>{user.dateCreate}</strong></p>

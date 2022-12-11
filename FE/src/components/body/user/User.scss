@@ -1,0 +1,76 @@
+.user {
+    .container {
+        background-color: antiquewhite;
+        margin: 5% 15%;
+        .container__list-title {
+            display: flex;
+            list-style: none;
+            font-size: 18px;
+            height: 38px;
+            line-height: 38px;
+            margin: 0;
+            padding: 0;
+            .container__list-title--item-stt {
+                background-color: antiquewhite;
+                text-align: center;
+                width:  50px;
+
+            }
+            .container__list-title--item-name {
+                width: 300px;
+                text-align: center;
+                background-color: rgb(164, 253, 253);
+
+            }
+            .container__list-title--item-email {
+                width: 400px;
+                text-align: center;
+            background-color: rgb(184, 253, 220);
+            }
+            .container__list-title--item-role {
+                width: 200px;
+                text-align: center;
+                background-color: rgb(187, 208, 255);
+            }
+            .container__list-title--item-acctive {
+                width: 200px;
+                text-align: center;
+                background-color: rgba(247, 197, 252, 0.445);
+            }
+        }
+        .container__list-content {
+            display: flex;
+            list-style: none;
+            font-size: 18px;
+            height: 38px;
+            line-height: 38px;
+            padding: 0;
+            margin: 0;
+            .container__list-title--item-stt {
+                background-color: red;
+                text-align: center;
+                width:  50px;
+            }
+            .container__list-title--item-name {
+                width: 300px;
+                text-align: center;
+                background-color: aqua;
+            }
+            .container__list-title--item-email {
+                width: 400px;
+                text-align: center;
+                background-color: rgb(97, 255, 181);
+            }
+            .container__list-title--item-role {
+                width: 200px;
+                text-align: center;
+                background-color: rgb(48, 113, 255);
+            }
+            .container__list-title--item-acctive {
+                width: 200px;
+                text-align: center;
+                background-color: rgba(213, 17, 231, 0.445);
+            }
+        }
+    }
+}
