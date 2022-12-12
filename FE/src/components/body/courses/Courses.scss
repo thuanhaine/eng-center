@@ -31,29 +31,38 @@
       box-shadow: 0 0 10px #ccc;
       border-radius: 8px;
       padding: 12px;
-      height: 250px;
+      height: 300px;
         position: relative;
-
+      .btn-box {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 32px;
+        position: absolute;
+        bottom: 32px;
+        right: 0;
+        left: 0;
         .btn{
-          position: absolute;
-          bottom: 12px;
-          right: 12px;
+          height: 32px;
           font-size: 16px;
           padding: 6px 12px;
           border-radius: 4px;
           outline: none;
           border: none;
-          background-color: rgb(108, 172, 255);
+          background-color: rgb(15, 119, 255);
+          opacity: .7;
           color: white;
           font-weight: 600;
+        }
+        .btn-delete {
+          background-color: rgb(255, 87, 81);
 
         }
         .btn:hover {
-          background-color: rgb(3, 100, 228);
-          opacity: .8;
-      cursor: pointer;
-
+          cursor: pointer;
+          opacity: 1;
         }
+      }
+       
     }
     // .courses__list-item:hover {
     //   background-color: rgb(208, 228, 255);

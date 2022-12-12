@@ -5,13 +5,15 @@ function CreateCourses() {
   const [codeInput, setCodeInput] = useState();
   const [nameInput, setNameInput] = useState();
   const [lectureInput, setLectureInput] = useState();
+  const [maxStudentInput, setMaxStudentInput] = useState();
   const [dayInput, setDayInput] = useState();
 
   let dataCourses ={
     code: String,
     name: String, 
     lecture: String,
-    dateStart: String
+    dateStart: String,
+    maxStudent: Number,
 }
 const handleInputCourses = (e) => {
   e.preventDefault()
@@ -19,7 +21,8 @@ const handleInputCourses = (e) => {
       code: codeInput,
     name: nameInput, 
     lecture: lectureInput,
-    dateStart: dayInput
+    dateStart: dayInput,
+    maxStudent: maxStudentInput
     }
     fetch(`http://localhost:3002/api/post`, {
         method:  'POST',
@@ -67,6 +70,17 @@ const handleInputCourses = (e) => {
           />
       </div>
       <div className="from-courses--box">
+          <p className="from-courses__name">Số lượng học viên</p>
+          <input
+            value={maxStudentInput}
+            type="number"
+            className="from-courses__input"
+            placeholder="Nhập Số lượng học viên"
+            onChange={(e) => setMaxStudentInput(e.target.value)}
+            required
+          />
+      </div>
+      <div className="from-courses--box">
           <p className="from-courses__name">Tên giáo viên</p>
           <input
             value={lectureInput}
@@ -78,12 +92,12 @@ const handleInputCourses = (e) => {
           />
       </div>
       <div className="from-courses--box">
-          <p className="from-courses__name">Ngày bắt đầu</p>
+          <p className="from-courses__name">Ngày nhập học</p>
           <input
             value={dayInput}
             type="text"
             className="from-courses__input"
-            placeholder="Nhập ngày bắt đầu"
+            placeholder="Nhập ngày nhập học"
             onChange={(e) => setDayInput(e.target.value)}
             required
           />

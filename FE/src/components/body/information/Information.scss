@@ -68,5 +68,69 @@
         text-align: center;
         font-size: 28px;
     }
+
+    .content {
+
+      .content-box {
+        .list-title {
+          display: flex;
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          border-bottom: 1px solid #ccc;
+          .item{
+            text-align: center;
+              .name {
+            width: 300px;
+          }
+            .lecture {
+              width: 200px;
+            }
+            .active {
+              width: 100px;
+            }
+          }
+        
+        }
+        .list-courses {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          .item{
+          display: flex;
+          text-align: center;
+          padding: 0;
+          .name {
+            width: 300px;
+          }
+            .lecture {
+              width: 200px;
+            }
+            .active {
+              width: 100px;
+
+              &:hover {
+                color: red;
+                cursor: pointer;
+              }
+            }
+
+          }
+          
+        }
+      }
+      
+    }
+  }
+  .font-18px {
+    font-size: 18px;
+  }
+  .font-20px {
+    font-size: 18px;
+  }
+  .font-weight{
+    font-weight: 600;
+  
   }
 }
+

@@ -2,6 +2,7 @@ import "./Courses.scss";
 import FromCreateCourses from "./form-create/CreateCourses";
 import { PlusOutlined } from "@ant-design/icons";
 import { useState, useEffect } from "react";
+import {Link} from 'react-router-dom'
 function Courses() {
   const [addCourse, setAddCourse] = useState(false);
   const [listCourses, setListCourses] = useState([]);
@@ -32,12 +33,35 @@ useEffect(() => {
     fetch(`http://localhost:3002/api/get`)
       .then((res) => res.json())
       .then((res) => {
-        const sortData = res.sort((a,b) => a.index - b.index)
-        setListCourses(sortData);
-        console.log(sortData)
+        
+        setListCourses(res.reverse());
       });
   }, []);
 
+  const handleViewCourse = (valueId) => {
+    const checkLocal = localStorage.getItem('courseId',valueId)
+    if(checkLocal) 
+    { 
+      localStorage.removeItem('courseId')
+    }
+    localStorage.setItem('courseId', valueId)
+    console.log(valueId);
+  }
+
+
+  const handdleDelete = (id) => {
+    fetch(`http://localhost:3002/api/deleteCourse/` + id, {
+      method: "DELETE",
+    })
+      .then((res) => res.json())
+      .then((res) => {
+        if (res.status === 200) {
+          alert(res.message + " deleted");
+          const newlist = listCourses.filter((item) => item._id !== id);
+          setListCourses(newlist);
+        } else alert(res.message);
+      });
+  }
   return (
     <div className="courses">
       <div className="courses__header">
@@ -74,9 +98,12 @@ useEffect(() => {
                 <p className="courses__list-item--date">
                   Date start: {course.dateStart}
                 </p>
-                <p className="courses__list-item--student">Student: {course.studentNumber}</p>
-
-                  <button className="btn">Đăng ký</button>
+                <p className="courses__list-item--student">Student: {course.currentStudent && course.currentStudent.length !== 0 ? course.currentStudent.length : '0' } / {course.maxStudent}</p>
+                <div className="btn-box">
+                  <Link className="btn" onClick={() => handleViewCourse(course._id)}  to="/course/detailcourse">Xem khóa học</Link>
+                  {isAdmin?<button className="btn btn-delete" onClick={()=> handdleDelete(course._id)}>Delete</button> : <></>}
+                  
+                </div>
               </li>
             );
           }
