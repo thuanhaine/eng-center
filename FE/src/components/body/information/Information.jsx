@@ -74,16 +74,15 @@ function Information() {
                     <p className="lecture font-20px font-weight">Giáo Viên</p>
                   </li>
                   <li className="item">
-                    <p className="active font-20px font-weight">Chỉnh Sửa</p>
+                    <p className="active font-20px font-weight">Thao tác</p>
                   </li>
-
                 </ul>
                 <ul className="list-courses">
                   {user.numberCourses.map((course, index) => (
                     <li className="item">
                       <p className="name font-18px">{course.name}</p>
                       <p className="lecture font-18px">{course.lecture}</p>
-                      <p className="active font-18px">Delete</p>
+                      <p className="active font-18px">Xóa</p>
                     </li>
                   ))}
                 </ul>
