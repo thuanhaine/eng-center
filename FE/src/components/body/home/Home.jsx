@@ -56,7 +56,7 @@ function Home() {
             </div>
             <div className="home__slider-list--item-content">
                 <h3 className="item-content--title">Tiếng Anh 3</h3>
-                <p className="item-content--lecture">Cô Phạm Hồng Nhung</p>
+                <p className="item-content--lecture">Thầy Vitalii Turytskyi</p>
                 <p className="item-content--text">
                   Giúp con trau dồi kĩ năng nghe - nói - đọc hiểu Tiếng Anh bằng
                   công nghệ A-talk luyện phát âm. Mục tiêu điểm 10 môn Tiếng Anh
@@ -74,7 +74,7 @@ function Home() {
             </div>
             <div className="home__slider-list--item-content">
                 <h3 className="item-content--title">Tiếng Anh 3</h3>
-                <p className="item-content--lecture">Cô Phạm Hồng Nhung</p>
+                <p className="item-content--lecture">Thầy Vitalii Turytskyi</p>
                 <p className="item-content--text">
                   Giúp con trau dồi kĩ năng nghe - nói - đọc hiểu Tiếng Anh bằng
                   công nghệ A-talk luyện phát âm. Mục tiêu điểm 10 môn Tiếng Anh
@@ -92,7 +92,7 @@ function Home() {
             </div>
             <div className="home__slider-list--item-content">
                 <h3 className="item-content--title">Tiếng Anh 3</h3>
-                <p className="item-content--lecture">Cô Phạm Hồng Nhung</p>
+                <p className="item-content--lecture">Thầy Vitalii Turytskyi</p>
                 <p className="item-content--text">
                   Giúp con trau dồi kĩ năng nghe - nói - đọc hiểu Tiếng Anh bằng
                   công nghệ A-talk luyện phát âm. Mục tiêu điểm 10 môn Tiếng Anh
@@ -110,7 +110,7 @@ function Home() {
             </div>
             <div className="home__slider-list--item-content">
                 <h3 className="item-content--title">Tiếng Anh 3</h3>
-                <p className="item-content--lecture">Cô Phạm Hồng Nhung</p>
+                <p className="item-content--lecture">Thầy Vitalii Turytskyi</p>
                 <p className="item-content--text">
                   Giúp con trau dồi kĩ năng nghe - nói - đọc hiểu Tiếng Anh bằng
                   công nghệ A-talk luyện phát âm. Mục tiêu điểm 10 môn Tiếng Anh
@@ -133,7 +133,7 @@ function Home() {
               />
             </div>
             <div className="home__lecture-list--item-content">
-                <h3 className="item-content--title">Cô Phạm Hồng Nhung</h3>
+                <h3 className="item-content--title">Thầy Vitalii Turytskyi</h3>
                 <p className="item-content--lecture">Giáo Viên Ngữ văn, Trường THCS Vạn Phúc - Hà Đông</p>
                 <p className="item-content--text">
                   Giúp con trau dồi kĩ năng nghe - nói - đọc hiểu Tiếng Anh bằng
@@ -149,7 +149,7 @@ function Home() {
               />
             </div>
             <div className="home__lecture-list--item-content">
-                <h3 className="item-content--title">Cô Phạm Hồng Nhung</h3>
+                <h3 className="item-content--title">Thầy Vitalii Turytskyi</h3>
                 <p className="item-content--lecture">Giáo Viên Ngữ văn, Trường THCS Vạn Phúc - Hà Đông</p>
                 <p className="item-content--text">
                   Giúp con trau dồi kĩ năng nghe - nói - đọc hiểu Tiếng Anh bằng
@@ -166,7 +166,7 @@ function Home() {
               />
             </div>
             <div className="home__lecture-list--item-content">
-                <h3 className="item-content--title">Cô Phạm Hồng Nhung</h3>
+                <h3 className="item-content--title">Thầy Vitalii Turytskyi</h3>
                 <p className="item-content--lecture">Giáo Viên Ngữ văn, Trường THCS Vạn Phúc - Hà Đông</p>
                 <p className="item-content--text">
                   Giúp con trau dồi kĩ năng nghe - nói - đọc hiểu Tiếng Anh bằng
@@ -183,7 +183,7 @@ function Home() {
               />
             </div>
             <div className="home__lecture-list--item-content">
-                <h3 className="item-content--title">Cô Phạm Hồng Nhung</h3>
+                <h3 className="item-content--title">Thầy Vitalii Turytskyi</h3>
                 <p className="item-content--lecture">Giáo Viên Ngữ văn, Trường THCS Vạn Phúc - Hà Đông</p>
                 <p className="item-content--text">
                   Giúp con trau dồi kĩ năng nghe - nói - đọc hiểu Tiếng Anh bằng
@@ -200,7 +200,7 @@ function Home() {
               />
             </div>
             <div className="home__lecture-list--item-content">
-                <h3 className="item-content--title">Cô Phạm Hồng Nhung</h3>
+                <h3 className="item-content--title">Thầy Vitalii Turytskyi</h3>
                 <p className="item-content--lecture">Giáo Viên Ngữ văn, Trường THCS Vạn Phúc - Hà Đông</p>
                 <p className="item-content--text">
                   Giúp con trau dồi kĩ năng nghe - nói - đọc hiểu Tiếng Anh bằng

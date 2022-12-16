@@ -82,12 +82,12 @@ function Information() {
                     <li className="item">
                       <p className="name font-18px">{course.name}</p>
                       <p className="lecture font-18px">{course.lecture}</p>
-                      <p className="active font-18px">Xóa</p>
+                      <p className="active font-18px">Hủy đăng ký</p>
                     </li>
                   ))}
                 </ul>
               </div>
-            ) : <h1> Ban chua dk lop hoc</h1>}
+            ) : <h1 className="empty"> Bạn chưa đăng ký lớp học nào !</h1>}
           </div>
         </div>
       </div>
